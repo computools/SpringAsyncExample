@@ -24,7 +24,7 @@ public class TestService {
     }
 
     @Async
-    @Scheduled(fixedDelay = 200000)
+    @Scheduled(fixedDelay = 2000)
     public void test() throws ExecutionException, InterruptedException, TimeoutException {
         long start = System.currentTimeMillis();
         CompletableFuture<String > result1 = test1.test();
